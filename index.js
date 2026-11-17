@@ -15,7 +15,7 @@ if (!existsSync(pdfPath)) {
   process.exit(1);
 }
 
-const provider = (process.env.PROVIDER || "brevo").toLowerCase();
+const provider = (process.env.PROVIDER || "resend").toLowerCase();
 
 let transportConfig;
 let from;

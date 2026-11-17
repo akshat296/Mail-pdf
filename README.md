@@ -2,11 +2,11 @@
 
 Send an email with a PDF attachment via SMTP. Supports **Resend**, **Brevo** or **Gmail**. Free.
 
-Pick provider with `PROVIDER=resend | brevo | gmail` in `.env`.
+Pick provider with `PROVIDER=resend | brevo | gmail` in `.env`. Default is **resend** (omit `PROVIDER` to use it).
 
 ## Setup
 
-1. `npm install`
+1. `npm ci` (installs the exact locked versions; use this instead of `npm install` for a reproducible build)
 2. `cp .env.example .env`
 3. Fill the vars for the provider you use, set `PROVIDER`.
 
